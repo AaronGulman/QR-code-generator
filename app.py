@@ -1,6 +1,6 @@
 import qrcode 
 
-def generate_qrcode(text):
+def generate_qr_code(url):
         
         qr = qrcode.QRCode(
 		version = 1,
@@ -9,8 +9,12 @@ def generate_qrcode(text):
 		border=4,
 	)
         
-        qr.add_data(text)
+        qr.add_data(url)
         qr.make(fit=True)
         img = qr.make_image(fill_color="black", back_color="white")
-        img.save(img.png)
+        return img
         
+url = input("Enter your url: ")
+new_qr_code = generate_qr_code(url)
+filename = "new_qr_code.png"
+new_qr_code.save(filename)
