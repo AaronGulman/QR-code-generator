@@ -58,7 +58,9 @@ This project provides a straightforward way to generate QR codes from URLs using
 ```sh
 $ python app.py
 Enter your url: https://www.example.com
+```
+
 This will generate a QR code for https://www.example.com and save it as new_qr_code.png.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
+License This project is licensed under the MIT License. See the LICENSE file for more details.
